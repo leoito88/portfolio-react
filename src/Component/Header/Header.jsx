@@ -48,7 +48,7 @@ const Header=()=>{
         h="70px"
         borderRadius="10px"
         position="sticky"
-        top="50px"
+        top={['10px',null,null,'50px']}
         margin="0 auto"
         padding="0 60px"
         zIndex="100"
@@ -76,7 +76,7 @@ const Header=()=>{
 
                     <Link to="portfolio" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}>Portfolio</Link>
 
-                    <Link to="servicios" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}>Servicios</Link>
+                    <Link to="prices" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}>Precios</Link>
 
                     <Link to="testimonios" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}>Testimonios</Link>
                     

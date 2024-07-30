@@ -26,16 +26,16 @@ const Servicios = () => {
 
     return(
         <>
-        <section class="services" id="services">
+        <Flex as={"section"} class="services" id="services" flexDirection={"column"} mt={["100px",null,null,"50px"]}>
         <Text as={"h3"} color={color}>¿Qué hago?</Text>
-            <Text as={"h2"} mb={20}><Text as={"span"}>Mis</Text> Servicios</Text>
+            <Text as={"h2"} mb={"20px"}><Text as={"span"}>Mis</Text> Servicios</Text>
             
-            <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30' h={300} mb={100} justifyContent={"center"}>
+            <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='10px' h={300} mb={100} justifyContent={"center"}>
                 {cardData.map((card, index) => (
                     <Card key={index} {...card} />
                 ))}
             </Flex>
-        </section>
+        </Flex>
     </>
     )
 }

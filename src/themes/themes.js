@@ -40,7 +40,7 @@ const theme = extendTheme({
       },
       'section': {
         // px: ['2%', '4%', '8%', '10%', null, '15%'],
-        my: ['0px', null, null, null, '80px', '90px'],
+        // my: ['0px', null, null, null, '80px', '90px'],
       },
       'body': {
         bg: 'n',

@@ -16,7 +16,7 @@ const Skills = () => {
       icon: 'fa-brands fa-css3-alt'
     },
     {
-      title: 'Java Script',
+      title: 'JavaScript',
       description: 'Soy competente en el uso de JavaScript para crear interacciones dinámicas en las páginas web. Puedo manipular el DOM, realizar llamadas a APIs y crear efectos visuales.',
       porcentaje: '80',
       icon: 'fa-brands fa-js'
@@ -44,7 +44,7 @@ const Skills = () => {
   return (
     <>
     <section className='skills' id='skills'>
-      <Flex className='skills' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} mt={"50"}>
+      <Flex className='skills' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} mt={['550px','250px','30px','30px']}>
         <Text fontSize='2xl' as='b' mb={"5"}>Habilidades Profesionales</Text>
         <Text as={"h4"}><Text as={"span"}>Mi</Text> Talento</Text>
         <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30' h={220} mb={300} justifyContent={"center"}>

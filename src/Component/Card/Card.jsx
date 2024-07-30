@@ -16,7 +16,7 @@ const Card = ({ title, description, description2 }) => {
         borderRadius={10}
         h="100%"
         boxShadow="s"
-        minW="300px"
+        minW="200px"
         border= "1px solid #ddd"
         _hover={{ 
             bgGradient: 'linear(to-br, var(--main-color), var(--hl-color))',

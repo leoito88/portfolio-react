@@ -21,3 +21,7 @@
   font-family: "montserrat", sans-serif;
 }
 
+@font-face {
+  font-family: 'Montserratout';
+  src: url('../public/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}

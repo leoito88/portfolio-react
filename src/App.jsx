@@ -22,7 +22,7 @@ function App() {
   return (
     <>
     <Center bg={color} h="100%" w='100%' color='white'>
-      <Box bg={colorBody} w='75%' p={0} my={50} color='black' borderRadius={10}>
+      <Box bg={colorBody} w={['100%',null,null,'75%']} p={0} my={['10px',null,null,'50px']} color='black' borderRadius={10}>
         <Header />
         <Hero />
         <Servicios />
