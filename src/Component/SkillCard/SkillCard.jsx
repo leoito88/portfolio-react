@@ -15,7 +15,7 @@ const SkillCard = ({ title, description, porcentaje, icon }) => {
       textAlign={'left'} 
       bg={bg} 
       borderRadius={10} 
-      h={"100%"} 
+      h={"220px"} 
       color={color}
       border={"1px solid #ddd"}
       boxShadow='s'

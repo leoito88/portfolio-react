@@ -16,12 +16,12 @@ const Footer = () => {
                 <Text as={"a"} color={color} href="http://www.linkedin.com/in/leandro-rojano" fontSize={"2.2rem"}><i class="fa-brands fa-linkedin"></i></Text>
             </Flex>
 
-            <Flex className="foot2" h={"30px"} m={"0"} textAlign={"center"} flexWrap={"1"} justifyContent={"center"} alignItems={"center"} p={"0"}>
-                <Text as={"h4"}>©2024</Text>
+            <Flex className="foot2" h={"30px"} m={"0"} textAlign={"center"} flexWrap={"1"} justifyContent={"center"} alignItems={"center"} p={"0"} display={["none","flex","flex","flex"]}>
+                <Text as={"h4"} color={color}>©2024</Text>
             </Flex>
 
             <Flex className="foot3" w={"150px"} h={"30px"} m={"0"} textAlign={"center"} flexWrap={"1"} justifyContent={"center"} alignItems={"center"} p={"0"}>
-                <Text as={"h4"}>Diseñado por <Text as={"span"}>Leandro Rojano</Text></Text>
+                <Text as={"h4"} color={color}>Diseñado por <Text as={"span"}>Leandro Rojano</Text></Text>
             </Flex>
         </Flex>
         </>

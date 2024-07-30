@@ -44,10 +44,10 @@ const Skills = () => {
   return (
     <>
     <section className='skills' id='skills'>
-      <Flex className='skills' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} mt={['550px','250px','30px','30px']}>
+      <Flex className='skills' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >
         <Text fontSize='2xl' as='b' mb={"5"}>Habilidades Profesionales</Text>
         <Text as={"h4"}><Text as={"span"}>Mi</Text> Talento</Text>
-        <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30' h={220} mb={300} justifyContent={"center"}>
+        <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30px' mb={30} justifyContent={"center"}>
           {cardData.map((card, index) => (
             <SkillsCard key={index} {...card} />
           ))}
