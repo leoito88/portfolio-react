@@ -22,7 +22,7 @@ const Hero = () => {
 
                 <Flex className="tittle3" flexDirection={"column"}>
                     <Text as={"h1"} fontSize={"2em"} mt={"-5px"} fontFamily={"caveat"} color={color}>Front-End Developer</Text>
-                    <Img src="../public/img/sub.png" w={"230px"} mt={"-30px"}></Img>
+                    <Img src="/img/sub.png" w={"230px"} mt={"-30px"}></Img>
                 </Flex>
 
                 <Flex className="tittle4">
@@ -41,7 +41,7 @@ const Hero = () => {
                     <Text as={"a"} color={color} href="http://www.linkedin.com/in/leandro-rojano" fontSize={"2.2rem"}><i class="fa-brands fa-linkedin"></i></Text>
                 </Flex>
                     <Flex className="contBut" alignItems={"center"} mt={"20px"}>
-                        <Button as={"a"} href="../public/img/CV-ROJANO.pdf"  p={"10px 20px"} fontSize={"16px"} color={"white"} backgroundImage={"linear-gradient(150deg, var(--main-color), var(--hl-color))"} border={"none"} borderRadius={"20px"} boxShadow={"0 0 0 1px white, 0 0 0 3px black, 5px 5px 1px #b1b1b1"} outline={"none"} transition={"all 1s ease"} _hover={{ transform: "scale(1.1)" , boxShadow: "0 0 0 1px white, 0 0 0 3px black, 8px 8px 2px #b1b1b1b5"}} >Descargar CV</Button><Flex as={"div"} bg={"black"} w={"50px"} h={"2px"}></Flex><Text as={"span"} ml={"3px"} fontWeight={"600"} fontSize={"0.8em"} letterSpacing={"-0.05em"}>Habilidades</Text>
+                        <Button as={"a"} href="/img/CV-ROJANO.pdf"  p={"10px 20px"} fontSize={"16px"} color={"white"} backgroundImage={"linear-gradient(150deg, var(--main-color), var(--hl-color))"} border={"none"} borderRadius={"20px"} boxShadow={"0 0 0 1px white, 0 0 0 3px black, 5px 5px 1px #b1b1b1"} outline={"none"} transition={"all 1s ease"} _hover={{ transform: "scale(1.1)" , boxShadow: "0 0 0 1px white, 0 0 0 3px black, 8px 8px 2px #b1b1b1b5"}} >Descargar CV</Button><Flex as={"div"} bg={"black"} w={"50px"} h={"2px"}></Flex><Text as={"span"} ml={"3px"} fontWeight={"600"} fontSize={"0.8em"} letterSpacing={"-0.05em"}>Habilidades</Text>
                     </Flex>
             </Flex>
 
