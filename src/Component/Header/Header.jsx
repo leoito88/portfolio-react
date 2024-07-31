@@ -80,7 +80,7 @@ const Header=()=>{
 
                     <Link to="portfolio" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}><Text as={"a"} color={color}>Portfolio</Text></Link>
 
-                    <Link to="testimonios" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}><Text as={"a"} color={color}>Testimonios</Text></Link>
+                    <Link to="testimonials" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}><Text as={"a"} color={color}>Testimonios</Text></Link>
 
                     <Link to="prices" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}><Text as={"a"} color={color}>Precios</Text></Link>
                     
@@ -117,7 +117,7 @@ const Header=()=>{
                         </MenuItem>
                         <MenuItem p={"1.5rem"}> <Link to="servicios" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('testimonials')} > .Testimonios </Link>
                         </MenuItem>
-                        <MenuItem p={"1.5rem"}> <Link to="testimonios" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('prices')}> .Precios </Link>
+                        <MenuItem p={"1.5rem"}> <Link to="testimonials" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('prices')}> .Precios </Link>
                         </MenuItem>
                         <MenuItem p={"1.5rem"}> <Link to="contacto" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('contact')} > .Contacto </Link>
                         </MenuItem>
