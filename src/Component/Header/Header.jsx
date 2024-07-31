@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button, Box, Flex, IconButton } from '@chakra-ui/react'
-import { Menu, MenuButton, MenuList, MenuItem, Text } from '@chakra-ui/react'
+import { Menu, MenuButton, MenuList, MenuItem, Text, useColorModeValue } from '@chakra-ui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faList } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../themes/themes.js'
@@ -9,6 +9,10 @@ import { DarkModeSwitch } from '../DarkModeSwitch/DarkModeSwitch';
 
 
 const Header=()=>{
+
+    const bg = useColorModeValue(colors.vb, colors.vn)
+    const color = useColorModeValue(colors.n, colors.b)
+
     const marginLinks= '10px';
     const fS1 = [null,null,null, '14px','18px'] //fontSize
     const fW1 = 600 //fontWeight
@@ -52,7 +56,7 @@ const Header=()=>{
         margin="0 auto"
         padding="0 60px"
         zIndex="100"
-        bg="rgba(240, 236, 229, 0.30)"
+        bg={bg}
         boxShadow="0 5px 32px rgba(0, 0, 0, 0.05)"
         backdropFilter="blur(10px)"
         border="solid 1px rgba(254, 254, 254, 0.2)"
@@ -65,27 +69,27 @@ const Header=()=>{
             <Flex as='section' display={['none',null,null,'flex']}flexDirection='row' justifyContent='space-between' width='100%' >
                 <Flex as='div' className="header-izq" alignItems="center" color={colors.color2} flexShrink='0'>
                     <Link to="hero" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('hero')}>
-                        <Text as={("h2", "b")} fontSize={"1.5em"} fontFamily={"montserrat"}>LR<Text as={"span"} color={colors.v} fontSize={"1em"}>.</Text>Dev</Text>
+                        <Text as={("h2")} fontWeight={"800"} color={color} fontSize={"1.5em"} fontFamily={"montserrat"}>LR<Text as={"span"} color={colors.v} fontSize={"1em"}>.</Text>Dev</Text>
                     </Link>
                 </Flex>
                 
                 <Flex as='nav' alignItems='center' justifyContent='right' gap='10px' pr='10px'color={colors.color2} flex='1' overflow='hidden' style={{cursor: "pointer"}} >
-                <Link to="services" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('services')} > Servicios </Link>
+                <Link to="services" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('services')} > <Text as={"a"} color={color}>Servicios</Text></Link>
                     
-                    <Link to="skills" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}>Habilidades</Link>
+                    <Link to="skills" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}><Text as={"a"} color={color}>Habilidades</Text></Link>
 
-                    <Link to="portfolio" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}>Portfolio</Link>
+                    <Link to="portfolio" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}><Text as={"a"} color={color}>Portfolio</Text></Link>
 
-                    <Link to="prices" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}>Precios</Link>
+                    <Link to="testimonios" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}><Text as={"a"} color={color}>Testimonios</Text></Link>
 
-                    <Link to="testimonios" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}>Testimonios</Link>
+                    <Link to="prices" smooth={smooth} duration={duration} offset={offset}  fontSize={fS1} fontWeight={fW1} mx={marginLinks} cursor={"pointer"}><Text as={"a"} color={color}>Precios</Text></Link>
                     
                     <Box as={FontAwesomeIcon} icon={faList} display='none'></Box>  
                 </Flex>
 
                 <Box className="div-boton" display="flex" alignItems='center' marginLeft='auto' >
                     <Link to="contact" smooth={smooth} duration={duration} offset={offset} >
-                        <Button bg={colors.v} color={colors.vo} borderRadius='20px' fontSize={fS1} fontWeight={fW1} width={[null,null,null,'110px','140px','160px']}>Contacto</Button>
+                        <Button bg={colors.v} color={color} borderRadius='20px' fontSize={fS1} fontWeight={fW1} width={[null,null,null,'110px','140px','160px']}>Contacto</Button>
                     </Link>
                     <DarkModeSwitch />
                 </Box>
@@ -109,7 +113,7 @@ const Header=()=>{
                         </MenuItem>
                         <MenuItem p={"1.5rem"}> <Link to="skills" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('skills')} > .Habilidades </Link>
                         </MenuItem>
-                        <MenuItem p={"1.5rem"}> <Link to="proyectos" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('portfolio')}> .Portfolio </Link>
+                        <MenuItem p={"1.5rem"}> <Link to="portfolio" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('portfolio')}> .Portfolio </Link>
                         </MenuItem>
                         <MenuItem p={"1.5rem"}> <Link to="servicios" smooth={smooth} duration={duration} offset={offset} onClick={() => handleLinkClick('testimonials')} > .Testimonios </Link>
                         </MenuItem>

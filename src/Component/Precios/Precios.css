@@ -1,0 +1,203 @@
+.pricing{
+    padding-top: 70px;
+    text-align: center;
+}
+
+.pricing .cards{
+    /* background-color: #196150; */
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* overflow-x: scroll; */
+    width: 100%;
+    padding: 40px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.pricing .card{
+    position: relative;
+    padding: 20px;
+    width: 300px;
+    height: 600px;
+    min-width: 200px;
+    /* display: flex; */
+}
+
+.pricing .card h3{
+    margin: 0;
+}
+.pricing .card h3 span{
+    margin: 0;
+    font-size: 0.9em;
+}
+.pricing .card h4{
+    margin: 0;
+    font-family: "montserrat";
+    font-weight: 700;
+}
+.pricing .card h5{
+    padding: 0 30px;
+    margin: 0;
+}
+.pricing .card h5 span{
+    color: #b1b1b1;
+    font-size: 1em;
+    margin: 0 26px;
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
+.pricing .card h6{
+    font-size: 0.8em;
+}
+
+.pricing .card .details{
+    margin: 10px 0;
+}
+.pricing .card .details h5{
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+.pricing .card .details i{
+    padding: 0 10px 0 0;
+    font-size: 0.9em;
+}
+
+.pricing .card .popular{
+    position: absolute;
+    background-color: #28a587;
+    padding: 10px 5px;
+    border: solid 2px #000;
+    border-radius: 50px;
+    color: #fff;
+    top: -20px;
+    right: 20px;
+    transition: all 0.5s ease;
+}
+.card:hover .popular{
+    background-color: #fff;
+    font-weight: 500;
+    color: #28a587;
+}
+
+.pricesdiv{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    margin: 30px 0 15px;
+}
+
+.pricing .cards .card .footcard{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+.pricing .cards .card .gradient-button{
+    position: absolute;
+    width: calc(100% - 4vh);
+    font-weight: 600;
+    padding: auto auto;
+    text-align: center;
+    color: #fff;
+    transition: all .5s;
+    z-index: 2;
+    bottom: 20px;
+}
+.pricing .card .gradient-button:hover{
+    background-image: linear-gradient(150deg, #c0d4c2, #f0f0f1);
+}
+
+.pricing .card:hover .gradient-button{
+    background-image: linear-gradient(150deg, #fff, #fff);
+    color: #28a587;
+}
+
+.pricing .card .footcard i{
+    color: #8cc3b6;
+}
+.pricing .card:hover .footcard i{
+    color: #28a587;
+}
+
+/* .pricing a{
+
+} */
+
+.pricing .card .dots{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.card:hover .dott{
+    background-color: var(--main-color);
+}
+
+.dots{
+    display: grid;
+    grid-template-columns: repeat(5, 2px); 
+    grid-template-rows: repeat(4, 2px);
+    gap: 12px; 
+    /* margin: 0 -10px 10px 0; */
+    position: relative;
+    bottom: 10px;
+    right: 35px;
+}
+
+.dott{
+    width: 5px;
+    aspect-ratio: 1/1;
+    background-color: var(--hl-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.dot{
+    width: 10px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: var(--bg-color);
+    border: solid 3px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.dot:nth-child(1){
+    background-color: var(--hl-color);
+    position: relative;
+    width: 15px;
+}
+
+
+.gradient-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 5px 5px 1px #b1b1b1;
+    cursor: pointer;
+    outline: none;
+    transition: color 1s ease;
+}
+
+.gradient-button:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    scale: 1.01;
+    background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 8px 8px 2px #b1b1b1b5;
+    cursor: pointer;
+    outline: none;
+}

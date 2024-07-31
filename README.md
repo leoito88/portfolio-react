@@ -1,8 +1,17 @@
-# React + Vite
+## Portfolio Personal
+## Descripción
+Mi Portafolio en línea. Donde muestro mis habilidades en programación, mis trabajos, datos personales y contacto.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto realizado en React y Chakra UI. El formulario es totalmente funcional (me envía un mensaje a mi mail). Se lo hizo responsive. El menú hamburguesa es funcional en pantallas pequeñas.
 
-Currently, two official plugins are available:
+## Enlace al Portfolio 
+Puede ingresar al mismo desde el siguiente link:
+https://portfolio-jet-ten-83.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/leoito88/portfolio/assets/59623841/5fa50fda-297a-4d93-9735-2ab06b719357)
+
+## Inspiración
+Diseño replicado:
+https://dribbble.com/shots/21491201-Portfolio-Website
+
+![Portfolio](https://github.com/leoito88/portfolio/assets/59623841/83ebf288-dccb-4dcc-ac10-2c6bb116c488)

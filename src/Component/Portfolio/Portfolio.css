@@ -1,0 +1,236 @@
+.portfolio{
+    /* position: relative; */
+    padding-top: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio input{
+    display: none;
+}
+
+.tag{
+    font-size: 15px;
+    margin: 0.8em 5px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    background: #efefef;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    transition: all .5s;
+}
+
+.tag:hover{
+    scale: 1.1;
+    box-shadow: 0 0 0 3px black, 6px 6px 0px #b1b1b1a1;
+}
+
+.projects{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.projects .dots{
+    display: grid;
+    grid-template-columns: repeat(5, 2px); 
+    grid-template-rows: repeat(4, 2px);
+    gap: 12px; 
+    /* margin: 0 -10px 10px 0; */
+    position: relative;
+    bottom: 10px;
+    right: -10px;
+}
+
+.portfolio div{
+    transition: all .4s ease-in-out;
+    gap: 30px;
+}
+.portfolio img{
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.portfolio .card{
+    position: relative;
+    border-radius: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding-top: 20px;
+    height: 500px;
+}
+
+.portfolio .card .footcard{
+    position: absolute;
+}
+
+#angular:checked ~ .projects > div:not([class*='angular']),
+#react:checked ~ .projects > div:not([class*='react']),
+#figma:checked ~ .projects > div:not([class*='figma']),
+#js:checked ~ .projects > div:not([class*='js']),
+#css:checked ~ .projects > div:not([class*='css']){
+    display: none;
+    /* opacity: 10%; */
+}
+
+#all:checked ~ .all,
+#angular:checked ~ .tag1, 
+#react:checked ~ .tag2,
+#figma:checked ~ .tag3,
+#js:checked ~ .tag4,
+#css:checked ~ .tag5{
+   background-color: #28a587;      
+   color: white;
+} 
+
+.projects h2{
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.7em;
+    text-align: left;
+    color: #28a587;
+    margin: -15px 0 -5px 0;
+}
+
+.projects h4{
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    text-align: left;
+    margin: 0 0 -20px;
+}
+
+.projects h5{
+    margin: 0;
+}
+
+.projects h6{
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.7em;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.portfolio .projects .card .footcard .links a{
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+    padding: 15px;
+}
+
+.projects .projects .card .footcard .links a:hover{
+    color: #7a7a7a;
+    margin: 0;
+}
+
+.portfolio .dots{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.portfolio a{
+    margin: 0px;
+    padding: 5px;
+}
+
+.portfolio h5:hover{
+    color: #fff;
+}
+
+.card{
+    position: relative;
+    padding: 0 20px;
+    text-align: left;
+    background-color: #f8f5f2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width: 300px;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    margin: 0;
+}
+
+.card:hover{
+    scale: 1.03;
+    text-align: left;
+    border-radius: 10px;
+    background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
+    color: #fff;
+    border: 1px solid black;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2)
+}
+
+.cards i{
+    color: var(--hl-color);
+    padding-left: 20px;
+    transition: 0.3s;
+}
+
+.card:hover i{
+    color: var(--bg-color);
+}
+
+.card:hover .dott{
+    background-color: var(--main-color);
+}
+
+.footcard{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.card a{
+    color: #000;
+    transition: all 0.3s;
+}
+
+.card:hover a{
+    color: #fff;
+}
+
+.card a:hover{
+    color: #8adac7;
+}
+
+.dots{
+    display: grid;
+    grid-template-columns: repeat(5, 2px); 
+    grid-template-rows: repeat(4, 2px);
+    gap: 12px; 
+    /* margin: 0 -10px 10px 0; */
+    position: relative;
+    bottom: 10px;
+    right: 35px;
+}
+
+.dott{
+    width: 5px;
+    aspect-ratio: 1/1;
+    background-color: var(--hl-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}

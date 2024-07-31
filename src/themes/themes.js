@@ -12,6 +12,8 @@ const theme = extendTheme({
     vo: '#155445',  // "Verde Oscuro"
     v: '#28a587', // "Verde"
     cr: '#f0ece5', // "Crema"
+    vb: 'rgba(240, 236, 229, 0.30)', // Vidrio Blanco
+    vn: 'rgba(23, 23, 22, 0.30)', // vidrio negro
   },
   styles: {
     global: {
@@ -92,4 +94,6 @@ export const colors = {
     cr: '#f0ece5', // "Crema"
     crb: '#f8f5f2', // "Crema blanco"
     vg: '#3f4c50', // "Verde Grisaceo"
+    vb: 'rgba(240, 236, 229, 0.30)', // Vidrio Blanco
+    vn: 'rgba(23, 23, 22, 0.30)'
 };
