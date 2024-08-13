@@ -8,7 +8,8 @@ Proyecto realizado en React y Chakra UI. El formulario es totalmente funcional (
 Puede ingresar al mismo desde el siguiente link:
 https://portfolio-jet-ten-83.vercel.app/
 
-![image](https://github.com/leoito88/portfolio/assets/59623841/5fa50fda-297a-4d93-9735-2ab06b719357)
+![image](https://github.com/user-attachments/assets/a3667d3a-1e96-4c1f-9696-c630423c2073)
+
 
 ## Inspiración
 Diseño replicado:
