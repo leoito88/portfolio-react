@@ -47,21 +47,22 @@ const Hero = () => {
 
             <Flex className="hero-2" w={"50%"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} mt={['50px',null,null,'0px']}>
                 <Flex className="bg" w={['200px',null,null,'400px']} h={['200px',null,null,'400px']} borderRadius={"50%"} overflow={"hidden"} border={"none"} bgGradient='linear(to-tl, #155445, #28a587)'>
-                    <Box
-                    as={motion.div}
-                    animate={{ opacity: 1, translateY: '0%' }}
-                    initial={{ opacity: 0, translateY: '80px' }}
-                    transition={{ duration: 6, ease: 'easeIn' }}
-                    backgroundImage="url('/img/yo.png')"
-                    backgroundPosition="center"
-                    width="100%"
-                    height="100%"
-                    borderRadius="50%"
-                    display="block"
-                    margin="0 auto"
-                    scale={['0.5',null,null,'1']}
-                    >
-                    </Box>
+                <Box
+    as={motion.div}
+    animate={{ opacity: 1, translateY: '0px', scale: 1 }} // Cambia el valor de scale aquí
+    initial={{ opacity: 0, translateY: '100px', scale: 0.8 }}
+    transition={{ duration: 12000, ease: 'easeInOut' }}
+    backgroundImage="url('/img/yo.png')"
+    backgroundPosition="center"
+    backgroundSize={['cover', null, null, 'cover']}
+    backgroundRepeat="no-repeat"
+    width="100%"
+    height="100%"
+    borderRadius="50%"
+    display="block"
+    margin="0 auto"
+>
+</Box>
                 </Flex>
 
                 <Flex className="pop pop1" mt={['0px',null,null,'-100px']} h={"100%"} position={"relative"} right={['60px',null,null,'130px']} p={"5px 20px"} fontSize={"1rem"} color={color} backgroundColor={bg} border={"none"} borderRadius={"35px"} boxShadow={"0 0 0 3px black, 6px 6px 0px #b1b1b1a1"} alignItems={"center"} justifyContent={"space-between"}>

@@ -1,12 +1,17 @@
 import "../Portfolio/Portfolio.css"
-import { Box, Flex } from "@chakra-ui/react"
+import { Flex, Box, Button, Textarea, Input, Text, useColorModeValue} from "@chakra-ui/react"
+import { colors } from '../../themes/themes';
 
 const Portfolio = () => {
+
+    const bg = useColorModeValue(colors.b, colors.n)
+    const color = useColorModeValue(colors.n, colors.b)
+
     return(
         <>
         <section class="portfolio" id="portfolio">
-            <h3>Portfolio</h3>
-            <h4><span>Mis</span> Proyectos</h4>
+        <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Portfolio</Text>
+        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Proyectos</Text>
 
             <input type="radio" id="all" name="button" checked></input>
             <input type="radio" id="angular" name="button"></input>

@@ -12,15 +12,18 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "formik": "^2.4.6",
     "framer-motion": "^11.3.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scroll": "^1.9.0"
+    "react-scroll": "^1.9.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -22,15 +22,18 @@ const Servicios = () => {
         }
       ];
 
-      const color = useColorModeValue('#000', '#fff')
+      const bg = useColorModeValue(colors.b, colors.n)
+      const color = useColorModeValue(colors.n, colors.b)
 
     return(
         <>
         <Flex as={"section"} class="services" id="services" flexDirection={"column"} mt={["100px",null,null,"50px"]} h={"100%"}>
-        <Text as={"h3"} color={color}>¿Qué hago?</Text>
-            <Text as={"h2"} mb={"20px"}><Text as={"span"}>Mis</Text> Servicios</Text>
+        
+        <Text as={"h3"} fontSize={"1.6em"} fontWeight={"bold"} color={color}>¿Qué hago?</Text>
+        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Servicios</Text>
+        
             
-            <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30px' mb={100} justifyContent={"center"}>
+            <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30px' mb={100} pt={"20px"} justifyContent={"center"}>
                 {cardData.map((card, index) => (
                     <Card key={index} {...card} />
                 ))}

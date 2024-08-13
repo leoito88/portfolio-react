@@ -1,11 +1,17 @@
 import "../Testimonios/Testimonios.css"
+import { Flex, Box, Button, Textarea, Input, Text, useColorModeValue} from "@chakra-ui/react"
+import { colors } from '../../themes/themes';
 
 const Testimonios = () => {
+
+    const bg = useColorModeValue(colors.b, colors.n)
+    const color = useColorModeValue(colors.n, colors.b)
+
     return(
         <>
         <section class="testimonials" id="testimonials">
-            <h3>Testimonios</h3>
-            <h4><span>Lo que</span> dicen mis Clientes</h4>
+        <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Testimonios</Text>
+        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Lo que</Text> Dicen Mis Clientes</Text>
 
             <div class="container">
                 <div class="card">
