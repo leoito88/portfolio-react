@@ -1,6 +1,7 @@
 import Card from "../Card/Card"
 import { Text, Flex, useColorModeValue } from "@chakra-ui/react"
 import { colors } from '../../themes/themes.js'
+import { Reveal } from "../Reveal/Reveal.jsx"
 
 const Servicios = () => {
 
@@ -27,17 +28,22 @@ const Servicios = () => {
 
     return(
         <>
-        <Flex as={"section"} class="services" id="services" flexDirection={"column"} mt={["100px",null,null,"50px"]} h={"100%"}>
         
-        <Text as={"h3"} fontSize={"1.6em"} fontWeight={"bold"} color={color}>¿Qué hago?</Text>
+        <Flex as={"section"} class="services" id="services" flexDirection={"column"} mt={["100px",null,null,"50px"]} h={"100%"} justifyContent="center" alignItems={"center"}>
+        
+        <Reveal>
+        <Text as={"h3"} textAlign={"center"} fontSize={"1.6em"} fontWeight={"bold"} color={color}>¿Qué hago?</Text>
+        </Reveal>
+
         <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Servicios</Text>
         
-            
+        <Reveal>
             <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30px' mb={100} pt={"20px"} justifyContent={"center"}>
                 {cardData.map((card, index) => (
                     <Card key={index} {...card} />
                 ))}
             </Flex>
+            </Reveal>
         </Flex>
     </>
     )

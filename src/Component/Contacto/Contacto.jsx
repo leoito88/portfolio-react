@@ -5,6 +5,7 @@ import { Flex, Box, Button, Textarea, Input, Text, useColorModeValue} from "@cha
 import { colors } from '../../themes/themes';
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Reveal } from "../Reveal/Reveal";
 
 const Contacto = () => {
     const [successMessage, setSuccessMessage] = useState('');
@@ -48,12 +49,16 @@ const Contacto = () => {
     return(
         <>
         <section class="contact-me" id="contact">
+        <Flex className='skills' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >
+            <Reveal>
             <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Contactame</Text>
+            </Reveal>
             <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Hablemos sobre</Text> Tus Ideas</Text>
-
+            </Flex>
+            
             <Flex className="contactdivs" justifyContent={"center"} flexDirection={["column","column","row","row"]} pt={"10px"}>
-
                 <div class="contleft">
+                    <Reveal>
                     <div class="container">
                         <i class="fa-regular fa-map"></i>
                         <div class="barra"></div>                  
@@ -61,28 +66,36 @@ const Contacto = () => {
                             <h4>Dirección</h4><h3>Junin 1453, S.M. de Tucumán</h3>
                         </div>
                     </div>
+                    </Reveal>
 
+                    <Reveal>
                     <div class="container">
                         <i class="fa-regular fa-user"></i><div class="barra"></div>                    
                         <div class="datos">
                             <h4>Freelance</h4><h3>Disponible</h3>
                         </div>
                     </div>
+                    </Reveal>
                     
+                    <Reveal>
                     <div class="container">
                         <i class="fa-regular fa-envelope"></i><div class="barra"></div>                   
                         <div class="datos">
                             <h4>Email</h4><h3>leandrorojano@gmail.com</h3>
                         </div>
                     </div>
+                    </Reveal>
 
+                    <Reveal>
                     <div class="container">
                         <i class="fa-solid fa-mobile-screen"></i><div class="barra"></div>                    
                         <div class="datos">
                             <h4>Teléfono</h4><h3>+5493813150489</h3>
                         </div>
                     </div>
+                    </Reveal>
                 </div>
+                
                 <Flex className="contright" w={"100%"} pt={"20px"} justifyContent={"center"}>
 
 <Formik

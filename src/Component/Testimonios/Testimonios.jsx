@@ -1,6 +1,7 @@
 import "../Testimonios/Testimonios.css"
 import { Flex, Box, Button, Textarea, Input, Text, useColorModeValue} from "@chakra-ui/react"
 import { colors } from '../../themes/themes';
+import { Reveal } from "../Reveal/Reveal";
 
 const Testimonios = () => {
 
@@ -10,9 +11,15 @@ const Testimonios = () => {
     return(
         <>
         <section class="testimonials" id="testimonials">
+        <Reveal>
         <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Testimonios</Text>
+        </Reveal>
+
+        
         <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Lo que</Text> Dicen Mis Clientes</Text>
 
+        <Reveal>
+        <Flex className='testimonials' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >
             <div class="container">
                 <div class="card">
                     <div class="quote">
@@ -65,6 +72,8 @@ const Testimonios = () => {
                     </div>
                 </div>
             </div>
+            </Flex>
+            </Reveal>
         </section>
         </>
     )

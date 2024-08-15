@@ -1,6 +1,7 @@
 import "../Portfolio/Portfolio.css"
 import { Flex, Box, Button, Textarea, Input, Text, useColorModeValue} from "@chakra-ui/react"
 import { colors } from '../../themes/themes';
+import { Reveal } from "../Reveal/Reveal";
 
 const Portfolio = () => {
 
@@ -10,7 +11,12 @@ const Portfolio = () => {
     return(
         <>
         <section class="portfolio" id="portfolio">
+
+        <Flex flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >
+        <Reveal>
         <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Portfolio</Text>
+        </Reveal>
+        </Flex>
         <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Proyectos</Text>
 
             <input type="radio" id="all" name="button" checked></input>
@@ -27,7 +33,7 @@ const Portfolio = () => {
             <label class="tag tag4" for="js">JavaScript</label>
             <label class="tag tag5" for="css">CSS</label>
             <br></br>
-
+        
         <div class="projects">
             
             <div class="react">
@@ -243,7 +249,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
         </>
     )

@@ -1,6 +1,7 @@
 import "../Precios/Precios.css"
 import { Flex, Box, Button, Textarea, Input, Text, useColorModeValue} from "@chakra-ui/react"
 import { colors } from '../../themes/themes';
+import { Reveal } from "../Reveal/Reveal";
 
 const Precios = () => {
 
@@ -9,9 +10,15 @@ const Precios = () => {
     return(
         <>
         <section class="pricing" id="prices">
+        <Flex flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >
+        <Reveal>
         <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Precios</Text>
-        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mi</Text> Tarifa De Precios</Text>
+        </Reveal>
 
+        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mi</Text> Tarifa De Precios</Text>
+        
+
+        <Reveal>
             <ul class="cards">
                 <li class="card">
                     <div class="popular">
@@ -77,6 +84,8 @@ const Precios = () => {
                     <a href="#contact" class="gradient-button">Comenzar Proyecto<i class="fa-solid fa-arrow-right"></i></a>
                 </li>
             </ul>
+            </Reveal>
+            </Flex>
         </section>
         </>
     )

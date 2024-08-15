@@ -1,6 +1,7 @@
 import SkillsCard from '../SkillCard/SkillCard';
 import { Flex, Text , useColorModeValue } from '@chakra-ui/react'
 import { colors } from '../../themes/themes.js'
+import { Reveal } from '../Reveal/Reveal.jsx';
 
 const Skills = () => {
 
@@ -50,14 +51,19 @@ const Skills = () => {
     <>
     <section className='skills' id='skills'>
       <Flex className='skills' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >
+        
+    <Reveal>
       <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Habilidades Profesionales</Text>
+    </Reveal>
       <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mi</Text> Talento</Text>
 
+          <Reveal>
         <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30px' mb={30} justifyContent={"center"} pt={"20px"}>
           {cardData.map((card, index) => (
             <SkillsCard key={index} {...card} />
           ))}
         </Flex>   
+          </Reveal>
       </Flex>
     </section>
     </>
