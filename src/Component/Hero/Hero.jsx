@@ -11,7 +11,7 @@ const Hero = () => {
 
     return(
         <>
-        <Flex as='section' alignItems={"center"} zIndex={3} justifyContent={"center"} p={0} flexDirection={['column',null,null,'row']} id="hero" mt={"30px"}>
+        <Flex as='section' alignItems={"center"} zIndex={3} justifyContent={"center"} p={0} flexDirection={['column',null,null,'row']} id="hero" mt={["30px",null,null,"70px"]}>
             <Flex className="hero-1"  zIndex={3} w={['90%',null,null,'50%']} p={['0',null,null,'0 0 0 50px']} textAlign={"left"} flexDirection={"column"}>
 
                 <Reveal>

@@ -6,7 +6,7 @@ const WaterDropGrid = () => {
     <Box
     position="absolute"
     display={["none","grid","grid","grid"]}
-    top={[0,105,100,-150,-220]}
+    top={[0,105,100,-150,-150]}
     left={[0,0,0,220,250]}
     width="100%"
     height="100%"

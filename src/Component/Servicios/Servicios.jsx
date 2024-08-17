@@ -3,6 +3,7 @@ import { Text, Flex, useColorModeValue } from "@chakra-ui/react"
 import { colors } from '../../themes/themes.js'
 import { Reveal } from "../Reveal/Reveal.jsx"
 
+
 const Servicios = () => {
 
     const cardData = [
@@ -36,6 +37,7 @@ const Servicios = () => {
         </Reveal>
 
         <Text as={"h4"} fontFamily={"caveat"} color={color} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Servicios</Text>
+        
         
         <Reveal>
             <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30px' mb={100} pt={"20px"} justifyContent={"center"}>
