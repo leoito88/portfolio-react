@@ -144,7 +144,7 @@ const FlipLink = ({ children, href }) => {
         position="sticky"
         top={['10px',null,null,'50px']}
         margin="0 auto"
-        padding="0 60px 0 50px"
+        padding={["0 25px",null,null,"0 60px 0 50px"]}
         zIndex="100"
         bg={bg}
         boxShadow="0 5px 32px rgba(0, 0, 0, 0.05)"
