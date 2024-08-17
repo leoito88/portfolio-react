@@ -25,7 +25,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
       }}
       initial="hidden"
       animate={mainControls}
-      transition={{ duration: 0.5, delay: 0.25}}
+      transition={{ duration: 0.55, delay: 0.25, ease: [0, 0.71, 0.2, 1.01]}}
       >
       {children}
       </motion.div>
@@ -37,7 +37,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
       }}
       initial="hidden"
       animate={slideControls}
-      transition={{ duration: 0.5, ease: "easeIn"}}
+      transition={{ duration: 0.5, ease: "easeInOut"}}
       style={{
         position:"absolute",
         top: 4,

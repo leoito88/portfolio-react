@@ -10,7 +10,7 @@ import { Reveal } from "../Reveal/Reveal";
 const Contacto = () => {
     const [successMessage, setSuccessMessage] = useState('');
 
-    const bg = useColorModeValue(colors.b, colors.n)
+    const bg = useColorModeValue(colors.b, colors.vg)
     const color = useColorModeValue(colors.n, colors.b)
   
     const initialValues = {
@@ -49,11 +49,11 @@ const Contacto = () => {
     return(
         <>
         <section class="contact-me" id="contact">
-        <Flex className='skills' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >
+        <Flex className='contact-me' mt={"100px"} flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >
             <Reveal>
             <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Contactame</Text>
             </Reveal>
-            <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Hablemos sobre</Text> Tus Ideas</Text>
+            <Text as={"h4"} fontFamily={"caveat"} color={color} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Hablemos sobre</Text> Tus Ideas</Text>
             </Flex>
             
             <Flex className="contactdivs" justifyContent={"center"} flexDirection={["column","column","row","row"]} pt={"10px"}>
@@ -63,7 +63,7 @@ const Contacto = () => {
                         <i class="fa-regular fa-map"></i>
                         <div class="barra"></div>                  
                         <div class="datos">
-                            <h4>Dirección</h4><h3>Junin 1453, S.M. de Tucumán</h3>
+                            <Text as={"h4"} color={color}>Dirección</Text><h3>Junin 1453, S.M. de Tucumán</h3>
                         </div>
                     </div>
                     </Reveal>
@@ -72,7 +72,7 @@ const Contacto = () => {
                     <div class="container">
                         <i class="fa-regular fa-user"></i><div class="barra"></div>                    
                         <div class="datos">
-                            <h4>Freelance</h4><h3>Disponible</h3>
+                          <Text as={"h4"} color={color}>Freelance</Text><h3>Disponible</h3>
                         </div>
                     </div>
                     </Reveal>
@@ -81,7 +81,7 @@ const Contacto = () => {
                     <div class="container">
                         <i class="fa-regular fa-envelope"></i><div class="barra"></div>                   
                         <div class="datos">
-                            <h4>Email</h4><h3>leandrorojano@gmail.com</h3>
+                          <Text as={"h4"} color={color}>Email</Text><h3>leandrorojano@gmail.com</h3>
                         </div>
                     </div>
                     </Reveal>
@@ -90,7 +90,7 @@ const Contacto = () => {
                     <div class="container">
                         <i class="fa-solid fa-mobile-screen"></i><div class="barra"></div>                    
                         <div class="datos">
-                            <h4>Teléfono</h4><h3>+5493813150489</h3>
+                          <Text as={"h4"} color={color}>Teléfono</Text><h3>+5493813150489</h3>
                         </div>
                     </div>
                     </Reveal>
@@ -124,12 +124,17 @@ const Contacto = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 width='100%'
-                bg={{bg}}
+                bg={bg}
+                color={color}
                 border={"2px solid"}
                 borderRadius={"25px"}
                 p={"10px"}
-                _hover={{ border: "2px solid #28a587",
-                }}
+                _hover={{ border: "2px solid #28a587"}}
+                _focus={{ 
+                  borderColor: "#28a587",
+                  boxShadow: "0 0 0 1px #28a587",
+                  color: "#006400",
+                  background: "#fff"}}
               />
               <Box role="alert" mt='0.1em' minHeight='1.7em' color={"red"}>
                 {touched.first_name && errors.first_name ? errors.first_name : ' '}
@@ -146,12 +151,17 @@ const Contacto = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 width='100%'
-                bg={{bg}}
+                bg={bg}
+                color={color}
                 border={"2px solid"}
                 borderRadius={"25px"}
                 p={"10px"}
-                _hover={{ border: "2px solid #28a587",
-                }}
+                _hover={{ border: "2px solid #28a587"}}
+                _focus={{ 
+                  borderColor: "#28a587",
+                  boxShadow: "0 0 0 1px #28a587",
+                  color: "#006400",
+                  background: "#fff"}}
               />
               <Box className="alert alert-danger" role="alert" mt='0.1em' minHeight='1.6em' color={"red"}>
                 {touched.subject && errors.subject ? errors.subject : ' '}
@@ -168,12 +178,17 @@ const Contacto = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 width='100%'
-                bg={{bg}}
+                bg={bg}
+                color={color}
                 border={"2px solid"}
                 borderRadius={"25px"}
                 p={"10px"}
-                _hover={{ border: "2px solid #28a587",
-                }}
+                _hover={{ border: "2px solid #28a587"}}
+                _focus={{ 
+                  borderColor: "#28a587",
+                  boxShadow: "0 0 0 1px #28a587",
+                  color: "#006400",
+                  background: "#fff"}}
               />
               <Box className="alert alert-danger" role="alert" mt='0.1em' minHeight='1.6em' color={"red"}>
                 {touched.user_email && errors.user_email ? errors.user_email : ' '}
@@ -186,7 +201,8 @@ const Contacto = () => {
                 name="message"
                 required
                 placeholder="Mensaje"
-                bg={{bg}}
+                bg={bg}
+                color={color}
                 value={values.message}
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -198,6 +214,11 @@ const Contacto = () => {
                 resize={"none"}
                 _hover={{ border: "2px solid #28a587",
                 }}
+                _focus={{ 
+                  borderColor: "#28a587",
+                  boxShadow: "0 0 0 1px #28a587",
+                  color: "#006400",
+                background: "#fff"}}
               />
               <Box role="alert" mt='0.1em' minHeight='1.7em' color={"red"}>
                 {touched.message && errors.message ? errors.message : ' '}

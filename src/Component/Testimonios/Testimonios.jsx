@@ -16,7 +16,7 @@ const Testimonios = () => {
         </Reveal>
 
         
-        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Lo que</Text> Dicen Mis Clientes</Text>
+        <Text as={"h4"} fontFamily={"caveat"} color={color} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Lo que</Text> Dicen Mis Clientes</Text>
 
         <Reveal>
         <Flex className='testimonials' flexDirection={"column"} alignItems={"center"} justifyContent={"center"} >

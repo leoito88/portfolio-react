@@ -29,13 +29,13 @@ const Servicios = () => {
     return(
         <>
         
-        <Flex as={"section"} class="services" id="services" flexDirection={"column"} mt={["100px",null,null,"50px"]} h={"100%"} justifyContent="center" alignItems={"center"}>
+        <Flex as={"section"} class="services" id="services" flexDirection={"column"} mt={["100px",null,null,"100px"]} h={"100%"} justifyContent="center" alignItems={"center"}>
         
         <Reveal>
         <Text as={"h3"} textAlign={"center"} fontSize={"1.6em"} fontWeight={"bold"} color={color}>¿Qué hago?</Text>
         </Reveal>
 
-        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Servicios</Text>
+        <Text as={"h4"} fontFamily={"caveat"} color={color} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Servicios</Text>
         
         <Reveal>
             <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30px' mb={100} pt={"20px"} justifyContent={"center"}>

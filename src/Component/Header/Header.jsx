@@ -159,7 +159,7 @@ const FlipLink = ({ children, href }) => {
             <Flex as='section' display={['none',null,null,'flex']}flexDirection='row' justifyContent='space-between' width='100%' >
                 <Flex as='div' className="header-izq" alignItems="center" color={colors.color2} flexShrink='0'>
                     <Link to="hero" smooth={smooth} duration={duration} offset={offset}>
-                        <Text as={("h2")} fontWeight={"800"} color={color} fontSize={"1.5em"} fontFamily={"montserrat"}>LR<Text as={"span"} color={colors.v} fontSize={"1em"}>.</Text>Dev</Text>
+                        <Text as={("h2")} _hover={{textShadow: "0 5px 32px rgba(40, 165, 135, 0.9)" }} transition="text-shadow 0.3s ease-in-out"  fontWeight={"800"} color={color} fontSize={"1.5em"} fontFamily={"montserrat"}>LR<Text as={"span"} color={colors.v} fontSize={"1em"}>.</Text>Dev</Text>
                     </Link>
                 </Flex>
                 

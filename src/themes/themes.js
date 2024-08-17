@@ -13,7 +13,7 @@ const theme = extendTheme({
     v: '#28a587', // "Verde"
     cr: '#f0ece5', // "Crema"
     vb: 'rgba(240, 236, 229, 0.30)', // Vidrio Blanco
-    vn: 'rgba(23, 23, 22, 0.30)', // vidrio negro
+    vn: 'rgba(10, 10, 10, 0.80)', // vidrio negro
   },
   styles: {
     global: {

@@ -17,7 +17,7 @@ const Portfolio = () => {
         <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Portfolio</Text>
         </Reveal>
         </Flex>
-        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Proyectos</Text>
+        <Text as={"h4"} fontFamily={"caveat"} color={color} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mis</Text> Proyectos</Text>
 
             <input type="radio" id="all" name="button" checked></input>
             <input type="radio" id="angular" name="button"></input>

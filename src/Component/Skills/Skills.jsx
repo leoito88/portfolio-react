@@ -55,7 +55,7 @@ const Skills = () => {
     <Reveal>
       <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Habilidades Profesionales</Text>
     </Reveal>
-      <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mi</Text> Talento</Text>
+      <Text as={"h4"} fontFamily={"caveat"} color={color} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mi</Text> Talento</Text>
 
           <Reveal>
         <Flex flexDirection={'row'} flexWrap={"wrap"}  alignItems='center' gap='30px' mb={30} justifyContent={"center"} pt={"20px"}>

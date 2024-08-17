@@ -15,7 +15,7 @@ const Precios = () => {
         <Text as={"h3"} fontSize={"1.6em"} color={color} fontWeight={"bold"}>Precios</Text>
         </Reveal>
 
-        <Text as={"h4"} fontFamily={"caveat"} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mi</Text> Tarifa De Precios</Text>
+        <Text as={"h4"} fontFamily={"caveat"} color={color} fontSize={"1.3rem"} fontWeight={"bold"}><Text as={"span"} fontFamily={"montserrat"} fontSize={"1rem"}>Mi</Text> Tarifa De Precios</Text>
         
 
         <Reveal>

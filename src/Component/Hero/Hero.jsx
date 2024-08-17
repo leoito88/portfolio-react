@@ -29,7 +29,7 @@ const Hero = () => {
                 <Reveal>
                 <Flex className="tittle3" flexDirection={"column"}>
                     <Text as={"h1"} fontSize={"2em"} mt={"-5px"} fontFamily={"caveat"} color={color}>Front-End Developer</Text>
-                    <Img src="/img/sub.png" w={"230px"} mt={"-30px"}></Img>
+                    <Img src="/img/sub.png" filter="drop-shadow(0px 5px 32px rgba(40, 165, 135, 0.5))" w="230px" mt="-30px" alt="sub"></Img>
                 </Flex>
                 </Reveal>
 
@@ -47,11 +47,11 @@ const Hero = () => {
 
                 <Reveal>
                 <Flex className="tittle6" gap={"20px"} mt={"20px"}>
-                    <Text as={"a"} color={color} href="https://www.github.com/leoito88" fontSize={"2.2rem"}><i class="fa-brands fa-github"></i></Text>
+                    <Text as={"a"} transition="all 0.3s ease-in-out" color={color} href="https://www.github.com/leoito88" fontSize={"2.2rem"}><i class="fa-brands fa-github"></i></Text>
 
-                    <Text as={"a"} color={color} href="https://wa.me/+5493813150489" fontSize={"2.2rem"}><i class="fa-brands fa-whatsapp"></i></Text>
+                    <Text as={"a"} transition="all 0.3s ease-in-out" color={color} href="https://wa.me/+5493813150489" fontSize={"2.2rem"}><i class="fa-brands fa-whatsapp"></i></Text>
 
-                    <Text as={"a"} color={color} href="http://www.linkedin.com/in/leandro-rojano" fontSize={"2.2rem"}><i class="fa-brands fa-linkedin"></i></Text>
+                    <Text as={"a"} transition="all 0.3s ease-in-out" color={color} href="http://www.linkedin.com/in/leandro-rojano" fontSize={"2.2rem"}><i class="fa-brands fa-linkedin"></i></Text>
                 </Flex>
                 </Reveal>
 
@@ -63,21 +63,20 @@ const Hero = () => {
             <Flex className="hero-2" position: relative zIndex={2} w={"50%"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} mt={['50px',null,null,'0px']}>
                 <Flex className="bg" zIndex={2} w={['200px',null,null,'400px']} h={['200px',null,null,'400px']} borderRadius={"50%"} overflow={"hidden"} border={"none"} bgGradient='linear(to-tl, #155445, #28a587)'>
                 <Box
-      as={motion.div}
-      animate={{ opacity: 1, translateY: '0px', scale: 1 }}
-      initial={{ opacity: 0, translateY: '100px', scale: 0.8 }}
-      transition={{ duration: 3, ease: 'easeInOut' }}
-      backgroundImage="url('/img/yo.png')"
-      backgroundPosition="center"
-      backgroundSize={['cover', null, null, 'cover']}
-      backgroundRepeat="no-repeat"
-      width="100%"
-      height="100%"
-      borderRadius="50%"
-    //   display="block"
-      margin="0 auto"
-      zIndex={2}
-    />
+  as={motion.div}
+  animate={{ opacity: 1, transform: 'translateY(0) scale(1)' }}
+  initial={{ opacity: 0, transform: 'translateY(200px) scale(0.8)' }}
+  transition={{ duration: 200, ease: "easeInOut" }}
+  backgroundImage="url('/img/yo.png')"
+  backgroundPosition="center"
+  backgroundSize={['cover', null, null, 'cover']}
+  backgroundRepeat="no-repeat"
+  width="100%"
+  height="100%"
+  borderRadius="50%"
+  margin="0 auto"
+  zIndex={2}
+/>
                 </Flex>
 
                 <Flex>
